@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "esnext",
+    "strict": true,
+    "strictNullChecks": false,
+    "esModuleInterop": true,
+    "outDir": "./dist",
+    "jsx": "react-jsx",
+    "moduleResolution": "node"
+  },
+  "baseUrl": "./src",
+  "include": ["src"]
+}

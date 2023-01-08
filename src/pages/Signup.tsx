@@ -11,7 +11,7 @@ const Body = styled.div`
   font-size: 10px;
 `;
 
-const LoginContainer = styled.main`
+const SignupContainer = styled.main`
   display: flex;
   width: 40rem;
   height: 25rem;
@@ -20,12 +20,12 @@ const LoginContainer = styled.main`
   overflow: hidden;
 `;
 
-const LoginImg = styled.img`
+const SignupImg = styled.img`
   width: 22rem;
   height: fit-content;
 `;
 
-const LoginInfo = styled.div`
+const SignupInfo = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -90,13 +90,13 @@ const A = styled.a`
   font-weight: 600;
 `;
 
-const Login = () => {
+const Signup = () => {
   return (
     <Body>
-      <LoginContainer>
-        <LoginImg src={image} alt="뉴진스 컨셉 포토 1" />
-        <LoginInfo>
-          <Title>로그인</Title>
+      <SignupContainer>
+        <SignupImg src={image} alt="뉴진스 컨셉 포토 1" />
+        <SignupInfo>
+          <Title>회원가입</Title>
           <Form>
             <Label htmlFor="email">이메일</Label>
             <Input
@@ -105,14 +105,18 @@ const Login = () => {
               type="text"
             ></Input>
             <Label htmlFor="password">비밀번호</Label>
-            <Input id="password" type="password"></Input>
-            <Button type="submit">로그인 하기</Button>
-            <A href="http://localhost:3000/auth/signup">회원가입 하러 가기!</A>
+            <Input
+              id="password"
+              type="password"
+              placeholder="8자 이상 입력"
+            ></Input>
+            <Button type="submit">회원가입 하기</Button>
+            <A href="http://localhost:3000/auth/login">로그인하러 가기!</A>
           </Form>
-        </LoginInfo>
-      </LoginContainer>
+        </SignupInfo>
+      </SignupContainer>
     </Body>
   );
 };
 
-export default Login;
+export default Signup;

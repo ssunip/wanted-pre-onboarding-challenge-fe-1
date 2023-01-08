@@ -16,6 +16,11 @@ button, a {
   cursor: pointer;
 }
 
+a {
+  &:visited {
+    color: inherit;
+  }
+}
 
 `;
 
